@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import users from '../utility/users.json'
 import { useCookies } from 'react-cookie'
 
@@ -8,12 +8,6 @@ export default function Auth() {
     email: '',
     password: '',
   })
-
-
-  useEffect(()=> {
-    console.log(cookies)
-  }, [])
-
 
   const handleChange = (event) => {
     setUserData({
@@ -27,10 +21,9 @@ export default function Auth() {
     // Form submission logic (e.g., validation, API calls)
     const user= users.find(user => userData.email === user.email)
 
-    console.log('Submitting form:', user);
-
     if(user.password === userData.password){
-        setCookie('user', JSON.stringify(user))
+        setCookie('user', JSON.stringify(user), )
+        window.location.replace('/trending-music')
     }
 
   }
