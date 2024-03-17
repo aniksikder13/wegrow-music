@@ -31,7 +31,7 @@ export default function Auth() {
         expires,
         path: '/'
       })
-        window.location.replace('/trending-music')
+        window.location.replace('/')
     } else {
       window.alert('Wrong credential !!!')
     }

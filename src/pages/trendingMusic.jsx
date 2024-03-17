@@ -1,7 +1,13 @@
 import React from 'react'
 
-export default function TrendingMusic() {
+export default function TrendingMusic({search}) {
+    console.log(search)
   return (
-    <div>trendingMusic</div>
+    <div>
+        
+
+
+
+    </div>
   )
 }
