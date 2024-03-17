@@ -14,9 +14,11 @@ function App() {
       <main className='w-[1600px] m-auto'>
         <BrowserRouter>
           <Routes>
-            <Route path="/trending-music" element={<ProtectedRoute><TrendingMusic /></ProtectedRoute>} />
+
+            <Route path="/" element={<ProtectedRoute><TrendingMusic /></ProtectedRoute>} />
             <Route path="/recommendation-music" element={<ProtectedRoute><RecommendedMusic /></ProtectedRoute>} />
             <Route path="/auth" element={<Auth />} />
+
           </Routes>
         </BrowserRouter>
       </main>

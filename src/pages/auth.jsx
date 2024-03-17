@@ -21,9 +21,19 @@ export default function Auth() {
     // Form submission logic (e.g., validation, API calls)
     const user= users.find(user => userData.email === user.email)
 
+    if(!user){
+      window.alert('Wrong credential !!!')
+    }
+
     if(user.password === userData.password){
-        setCookie('user', JSON.stringify(user), )
+      const expires = new Date(Date.now() + 24 * 60 * 60 * 1000); // One day from now
+      setCookie('user', JSON.stringify(user), {
+        expires,
+        path: '/'
+      })
         window.location.replace('/trending-music')
+    } else {
+      window.alert('Wrong credential !!!')
     }
 
   }
