@@ -9,7 +9,7 @@ export default function Header() {
                                             Sign in
                                         </a> :
                                         <span 
-                                            className="hover:text-green-600" 
+                                            className="hover:text-green-600 cursor-pointer" 
                                             onClick={() => {
                                                 removeCookie(['user'])
                                                 window.location.replace('/auth')

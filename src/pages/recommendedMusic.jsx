@@ -1,7 +1,6 @@
-import React from 'react'
 
-export default function RecommendedMusic() {
-  return (
-    <div>recommendedMusic</div>
-  )
+import MusicLists from "../component/ui/MusicLists";
+
+export default function RecommendationMusics({ search }) {
+  return <MusicLists />
 }

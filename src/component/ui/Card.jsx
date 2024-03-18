@@ -1,26 +1,25 @@
-import { useState, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 
-const MusicPlayerCard = ({ title, artist, artworkUrl, audioSrc }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null)
+const MusicPlayerCard = ({ title, artist, audioSrc, isPlaying, onPlayPause }) => {
+  const audioRef = useRef(null);
 
-  const togglePlayPause = () => {
-    setIsPlaying(!isPlaying);
+  const handlePlayback = () => {
+    // Delegate playback control to parent component
+    onPlayPause(!isPlaying);
+  };
+
+  useEffect(() => {
     if (isPlaying) {
-      audioRef.current.play();
+      audioRef.current.play()
     } else {
+      // Ensure previous audio was actually paused
       audioRef.current.pause();
     }
-  }
+  }, [isPlaying, audioRef]); 
 
   return (
     <div className="flex items-center bg-white rounded-lg border-[1px] hover:shadow-md p-4">
-      {/* <img
-        src={artworkUrl}
-        alt={title}
-        className="w-20 h-20 rounded-lg mr-4"
-      /> */}
       <div className="flex flex-col">
         <h3 className="text-lg font-medium">{title}</h3>
         <p className="text-gray-600 text-sm">{artist}</p>
@@ -28,12 +27,12 @@ const MusicPlayerCard = ({ title, artist, artworkUrl, audioSrc }) => {
       <div className="flex ml-auto">
         <button
           className="bg-green-500 hover:bg-green-600 text-white text-sm px-2 py-1 rounded-sm "
-          onClick={togglePlayPause}
+          onClick={handlePlayback}
         >
           {!isPlaying ? 'Play' : 'Pause'}
         </button>
       </div>
-      <audio ref={audioRef} src={audioSrc} controls={false} />
+      <audio ref={audioRef} src={audioSrc} controls={false} onError={(error) => console.error('Audio loading error:', error)} />
     </div>
   );
 };

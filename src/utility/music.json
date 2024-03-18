@@ -2,105 +2,105 @@
     {
       "title": "Bohemian Rhapsody",
       "artist": "Queen",
-      "musicSrc": "https://example.com/bohemian_rhapsody.mp3",
+      "musicSrc": "/musics/Age_of_Mutation_-_1_-_DmC_Devil_May_Cry_Combichrist_Soundtrack.mp3",
       "rating": 5,
       "release": 2005
     },
     {
-      "title": "Imagine",
+      "title": "That s My Name 2010 (feat Lora)",
       "artist": "John Lennon",
-      "musicSrc": "https://example.com/imagine.mp3",
+      "musicSrc": "/musics/Akcent - That s My Name 2010 (feat Lora) - YouTube.mp3",
       "rating": 4.8,
       "release": 2010
     },
     {
       "title": "Hey Jude",
       "artist": "The Beatles",
-      "musicSrc": "https://example.com/hey_jude.mp3",
+      "musicSrc": "/musics/Blue Whale.mp3",
       "rating": 4.9,
       "release": 2015
     },
     {
       "title": "Like a Rolling Stone",
       "artist": "Bob Dylan",
-      "musicSrc": "https://example.com/like_a_rolling_stone.mp3",
+      "musicSrc": "/musics/Dil+Amar+-+Tanjib+Sarowar+&+Meghla+(Remix)+-+DJ+ZRA.mp3",
       "rating": 4.7,
       "release": 2020
     },
     {
       "title": "Respect",
       "artist": "Aretha Franklin",
-      "musicSrc": "https://example.com/respect.mp3",
+      "musicSrc": "/musics/Emotions - AShamaluevMusic.mp3",
       "rating": 5,
       "release": 2020
     },
     {
       "title": "Smells Like Teen Spirit",
       "artist": "Nirvana",
-      "musicSrc": "https://example.com/smells_like_teen_spirit.mp3",
+      "musicSrc": "/musics/Epic Battle Trailer - AShamaluevMusic.mp3",
       "rating": 4.8,
       "release": 2021
     },
     {
       "title": "Hotel California",
       "artist": "Eagles",
-      "musicSrc": "https://example.com/hotel_california.mp3",
+      "musicSrc": "/musics/Hamari_Adhuri_Kahani_(Title_Track)_[From__Hamari_Adhuri_Kahani_].mp3",
       "rating": 4.6,
       "release": 2023
     },
     {
       "title": "Thriller",
       "artist": "Michael Jackson",
-      "musicSrc": "https://example.com/thriller.mp3",
+      "musicSrc": "/musics/MOKX - Charger.mp3",
       "rating": 4.9,
       "release": 2021
     },
     {
       "title": "Stairway to Heaven",
       "artist": "Led Zeppelin",
-      "musicSrc": "https://example.com/stairway_to_heaven.mp3",
+      "musicSrc": "/musics/NILPOR~1.MP3",
       "rating": 5,
       "release": 2024
     },
     {
       "title": "A Day in the Life",
       "artist": "The Beatles",
-      "musicSrc": "https://example.com/a_day_in_the_life.mp3",
+      "musicSrc": "/musics/Offensive - AShamaluevMusic.mp3",
       "rating": 4.8,
       "release": 2023
     },
     {
       "title": "Lose Yourself",
       "artist": "Eminem",
-      "musicSrc": "https://example.com/lose_yourself.mp3",
+      "musicSrc": "/musics/Perfect_Deface_Page_Music.mp3",
       "rating": 4.7,
       "release": 2014
     },
     {
       "title": "Billie Jean",
       "artist": "Michael Jackson",
-      "musicSrc": "https://example.com/billie_jean.mp3",
+      "musicSrc": "/musics/Power - AShamaluevMusic.mp3",
       "rating": 4.8,
       "release": 2015
     },
     {
       "title": "Purple Rain",
       "artist": "Prince",
-      "musicSrc": "https://example.com/purple_rain.mp3", 
+      "musicSrc": "/musics/Pursuit - AShamaluevMusic.mp3", 
       "rating": 4.9,
       "release": 2022
     },
     {
       "title": "Get Lucky",
       "artist": "Daft Punk",
-      "musicSrc": "https://example.com/get_lucky.mp3",
+      "musicSrc": "/musics/Spartacas.mp3",
       "rating": 4.6,
       "release": 2023
     },
     {
       "title": "I Will Always Love You",
       "artist": "Whitney Houston",
-      "musicSrc": "https://example.com/i_will_always_love_you.mp3",
+      "musicSrc": "/musics/dark-netflix-theme-song.mp3",
       "rating": 4.8,
       "release": 2024
     }
