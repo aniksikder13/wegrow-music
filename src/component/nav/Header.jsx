@@ -1,9 +1,12 @@
 import { useCookies } from 'react-cookie'
+import { useLocation } from 'react-router-dom'
 
 export default function Header() {
     const [cookies, setCookie, removeCookie] = useCookies(['user']);
     const user = cookies?.user;
     const isAuthenticated = !!user;
+
+
 
     const authText= !isAuthenticated ? <a href="/auth" className="hover:text-green-600">
                                             Sign in
@@ -41,3 +44,4 @@ export default function Header() {
     </header>
   )
 }
+
